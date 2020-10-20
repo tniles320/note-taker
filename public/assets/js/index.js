@@ -77,6 +77,7 @@ const handleNoteDelete = function (event) {
     getAndRenderNotes();
     renderActiveNote();
   });
+  location.reload();
 };
 
 // Sets the activeNote and displays it
