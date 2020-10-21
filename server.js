@@ -31,8 +31,8 @@ app.get('/notes', (req, res) => {
 
 // get all notes and add unique id's
 app.get('/api/notes', (req, res) => {
-    for(let i = 0; i < parseNote.length; i ++) {
-        parseNote[i].id = i;
+    for(let i = 0; i < parseNote.length; i++) {
+        parseNote[i].id = i + 1;
     }
     return (res.json(parseNote));
 });
@@ -40,6 +40,7 @@ app.get('/api/notes', (req, res) => {
 // Add a note
 app.post('/api/notes', (req, res) => {
   const newNote = req.body;
+  newNote.id = parseNote.length + 1;
   parseNote.push(newNote);
   res.json(parseNote);
   addNote(parseNote);
