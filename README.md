@@ -1,4 +1,5 @@
 # Note Taker
+[Click here to view the website!](https://tniles-note-taker.herokuapp.com/)
 
 ![license](https://img.shields.io/badge/License-MIT-orange)
 
